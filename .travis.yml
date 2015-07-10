@@ -5,6 +5,6 @@ jdk:
   - openjdk6
 
 before_script:
-  - svn checkout -q svn://svn.code.sf.net/p/runawfe/code/ runawfe-code
+  - svn checkout -q svn://svn.code.sf.net/p/runawfe/code/RunaWFE-4.x/trunk/ runawfe-code
   - cd runawfe-code
   - sh run.sh
