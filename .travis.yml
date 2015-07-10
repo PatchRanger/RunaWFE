@@ -5,6 +5,10 @@ jdk:
   - openjdk6
 
 before_script:
-  - svn checkout -q svn://svn.code.sf.net/p/runawfe/code/RunaWFE-4.x/trunk/ runawfe-code
-  - cd runawfe-code
+  #- svn checkout -q svn://svn.code.sf.net/p/runawfe/code/RunaWFE-4.x/trunk/ runawfe-code
+  - wget http://downloads.sourceforge.net/project/runawfe/SRC%20and%20BIN%20files/4.2.0RC/RunaWFE%20Server/RunaWFE_Server4.2.0RC.zip?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Frunawfe%2Ffiles%2FSRC%2520and%2520BIN%2520files%2F4.2.0RC%2FRunaWFE%2520Server%2F&ts=1436500259&use_mirror=garr
+  - unzip RunaWFE_Server4.2.0RC.zip
+  - cd RunaWFE_Server4.2.0RC
+
+script:
   - sh run.sh
