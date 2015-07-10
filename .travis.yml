@@ -5,5 +5,7 @@ jdk:
   - oraclejdk6
   - openjdk6
 
-install:
-  - ./run.sh
+before_script:
+  - composer install
+  - cd ../vendor/RunaWFE/RunaWFE
+  - sh run.sh
