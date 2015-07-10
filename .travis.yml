@@ -6,6 +6,6 @@ jdk:
   - openjdk6
 
 before_script:
-  - composer install
-  - cd ../vendor/RunaWFE/RunaWFE
+  - svn checkout svn://svn.code.sf.net/p/runawfe/code/ runawfe-code
+  - cd runawfe-code
   - sh run.sh
