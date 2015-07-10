@@ -8,7 +8,7 @@ before_script:
   #- svn checkout -q svn://svn.code.sf.net/p/runawfe/code/RunaWFE-4.x/trunk/ runawfe-code
   - wget -O RunaWFE_Server4.2.0RC.zip "http://sourceforge.net/projects/runawfe/files/SRC%20and%20BIN%20files/4.2.0RC/RunaWFE%20Server/RunaWFE_Server4.2.0RC.zip"
   - unzip RunaWFE_Server4.2.0RC.zip
-  - cd RunaWFE_Server4.2.0RC
+  - cd RunaWFE_Server4.2.0RC/bin
 
 script:
   - sh run.sh
